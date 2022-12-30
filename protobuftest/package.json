@@ -1,0 +1,6 @@
+{
+	"dependencies": {
+		"google-protobuf": "3.21.0",
+		"hybrid-crypto-js": "^0.2.4"
+	}
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.youku.server.pb;
+
+message SearchRequest {
+    string query = 1;
+    bool available = 2;
+    float distance = 3;
+    double location = 4;
+    fixed64 offset = 5;
+    optional int32 page_number = 6;
+    optional uint32 result_per_page = 7;
+    optional bytes extra_data = 8;
+}
+//protoc --js_out=import_style=commonjs,binary:. .\pb\search_req.proto

@@ -1,0 +1,14 @@
+syntax = "proto3";
+package websocket;
+ 
+message WebsocketMessage {
+    string Topic =1;
+    bytes  Body=2;
+ }
+message GenericRPC {
+    string Method =1;
+	string From =2;
+	string To=3;
+	int32 Code=4;
+    bytes  parameters=5;
+ } 

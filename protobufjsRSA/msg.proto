@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package user;
+
+message Login {
+    string username = 1;
+    string password = 2;
+}
+message Address{
+  required string province = 1;
+  required string city = 2;
+  required string country = 3;
+}

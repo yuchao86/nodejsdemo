@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package com.youku.server.pb;
+
+message requestModel{
+	string msg = 1;
+	string code = 2;
+	string data = 3;
+}
+
+//protoc --js_out=import_style=commonjs,binary:. .\api_common.proto

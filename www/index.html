@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    <%=title%>
+  </title>
+</head>
+
+<body>
+  <%= tableinfo.tablename%>
+  <table border='1px solid #ccc'>
+    <tr>
+      <th>task_id</th>
+      <th>status</th>
+      <th>req_data</th>
+      <th>res_data</th>
+      <th>Operate</th>
+    </tr>
+      <%for(var i=0 ; i < list.length ; i++) {%>
+        <tr>
+          <td>
+            <%= list[i].task_id%>
+          </td>
+          <td>
+            <%= list[i].status%>
+          </td>
+          <td>
+            <%= list[i].req_data%>
+          </td>
+          <td>
+            <%= list[i].extra%>
+          </td>
+          <td>
+            <a href="http://localhost:6600/adsense/task/exec?task_id=<%= list[i].task_id %>" >执行</a>
+
+
+          </td>
+        </tr>
+        <%}%>
+    </ul>
+  </table>
+    
+</body>
+
+</html>
